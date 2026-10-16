@@ -1,0 +1,19 @@
+header,
+main,
+footer {
+    border: 1px solid black;
+}
+
+section,
+article {
+    border: 1px solid gray;
+}
+
+/*
+ * Custom CSS element
+ */
+career-highlight {
+    display: block;
+    border: 1px solid black;
+    padding: 0.5rem;
+}
