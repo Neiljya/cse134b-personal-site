@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Experiments | Neil Yang</title>
+
+    <link rel="stylesheet" href="assets/site.css">
+    <style>
+        #experiment-area {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="experience.html">Experience</a> |
+            <a href="projects.html">Projects</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>HTML Experiments</h1>
+        <section id="experiment-area">
+            <h2>Experimental Elements</h2>
+            <article>
+                <h3>Template Element</h3>
+
+                <p>
+                    The template content is in the
+                    document but not displayed
+                </p>
+                <template id="my-template">
+                    <p>
+                        This is the template content
+                    </p>
+                </template>
+            </article>
+
+            <!-- Audio -->
+            <article>
+                <h3>Audio Element</h3>
+
+                <audio controls>
+                    <source
+                        src="assets/audio.mp3"
+                        type="audio/mpeg"
+                    >
+
+                    Your browser does not support audio.
+                </audio>
+            </article>
+
+            <!-- Video -->
+            <article>
+                <h3>Video Element</h3>
+
+                <video
+                    controls
+                    width="320"
+                    height="240"
+                >
+                    <source
+                        src="assets/video.mp4"
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support video.
+                </video>
+            </article>
+
+            <!-- Canvas -->
+            <article>
+                <h3>Canvas Element</h3>
+
+                <canvas
+                    id="example-canvas"
+                    width="250"
+                    height="100"
+                >
+                    A simple canvas drawing.
+                </canvas>
+
+                <script>
+                    const canvas = document.getElementById("example-canvas");
+                    const context = canvas.getContext("2d");
+                    context.fillStyle = "red";
+                    context.fillRect(20, 20, 100, 50);
+                </script>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="index.html">Return Home</a>
+        </p>
+    </footer>
+</body>
+</html>
